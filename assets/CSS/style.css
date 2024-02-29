@@ -13,6 +13,10 @@ main {
   height: 100%;
 }
 
+/**********************************
+SECTION INTRO
+***********************************/
+
 .bar1,
 .bar2,
 .bar3 {
@@ -48,10 +52,30 @@ h1 span {
   background-color: #fff;
   padding: 15px 5px 15px 5px;
 }
-/*
-TESTING
 
-#intro {
+/**********************************
+SECTION PROJECTS
+***********************************/
+
+#projects {
+  display: flex;
+  margin-top: 515px;
+}
+
+.box-left {
+  background-color: #009c86;
+  height: 100vh;
+  width: 50%;
+}
+
+.box-right {
+  background-color: #fff;
+  height: 100vh;
+  width: 50%;
+}
+
+/*
+TESTING #intro {
   background-color: aliceblue;
   min-height: 100vh;
 }
