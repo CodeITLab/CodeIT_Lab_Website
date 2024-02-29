@@ -1,15 +1,55 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(22, 110, 110);
+  background-color: #009c86;
+  margin-top: 20px;
 }
 
 main {
-  height: 100vh;
+  height: 100%;
 }
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: #fff;
+  width: 50px;
+  height: 5px;
+  margin: 5px 5px 5px 15px;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-intro-title {
+  font-size: 52px;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 span {
+  color: #009c86;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  padding: 15px 5px 15px 5px;
+}
+/*
+TESTING
 
 #intro {
   background-color: aliceblue;
@@ -30,3 +70,4 @@ main {
   background-color: red;
   min-height: 100vh;
 }
+*/
