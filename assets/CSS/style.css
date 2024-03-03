@@ -4,52 +4,58 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html,
+main {
   background-color: #009c86;
-  margin-top: 20px;
+  height: 100%;
 }
 
-main {
-  height: 100%;
+/**********************************
+NAV
+***********************************/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+}
+
+.hamburger-menu-item {
+  background-color: #fff;
+  width: 50px;
+  height: 5px;
+  margin: 5px 5px 5px 15px;
+  border-radius: 5px;
 }
 
 /**********************************
 SECTION INTRO
 ***********************************/
 
-.bar1,
-.bar2,
-.bar3 {
-  background-color: #fff;
-  width: 50px;
-  height: 5px;
-  margin: 5px 5px 5px 15px;
-}
-
-#intro {
+#intro,
+#projects,
+#about {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
-.header-intro-title {
+.intro-title {
   font-size: 52px;
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
 }
 
-h1 span {
-  color: #009c86;
-}
-
-.square {
+.intro-title-square {
   height: 50px;
   width: 50px;
   background-color: #fff;
+  color: #009c86;
   padding: 15px 5px 15px 5px;
 }
 
@@ -57,20 +63,15 @@ h1 span {
 SECTION PROJECTS
 ***********************************/
 
-#projects {
-  display: flex;
-  margin-top: 515px;
-}
-
-.box-left {
+.projects-description {
   background-color: #009c86;
-  height: 100vh;
+  height: 100%;
   width: 50%;
 }
 
-.box-right {
+.projects-item {
   background-color: #fff;
-  height: 100vh;
+  height: 100%;
   width: 50%;
 }
 
