@@ -57,15 +57,30 @@
       </section>
 
       <section id="projects">
+        <!-- promijeniti container-header u projects-header ili projects-header-wrapper -->
         <div class="container-header">
+          <!-- automatski bi projects-title postalo projects-header-title -->
           <h1 class="projects-title">RECENT PROJECTS</h1>
+          <!-- ovdje nam čak i ne treba klasa u tom slučaju, možemo element referencirati pomoću:
+
+           .projects-header-title p { }
+
+           tek toliko da smanjimo broj klasa, ne treba nužno svaki element imati svoju klasu.
+           -->
           <p class="projects-text">
             We love what we do,<br />check out some of our latest work.
           </p>
         </div>
 
+        <!-- sukladno nazivu sekcije, promijenio bi container-design u project-items -->
         <div class="container-design">
+          <!-- čak ne bi stavio first-row i second-row,
+          ostavio bi samo row kao klasu,
+          ali onda moraš vidjeti sa flex-wrap i flex atributom kako riješiti da u jednom bude 3 a u drugom 2 items-->
           <div class="first-row">
+            <!-- pošto ćemo container-design promijeniti u projects-item,
+             promijeni projects-box u project ili item, što god hoćeš
+             -->
             <div class="projects-box text">TRACK & FIT</div>
             <div class="projects-box text">TRACK & FIT</div>
             <div class="projects-box text">TRACK & FIT</div>
