@@ -58,6 +58,26 @@ SECTION INTRO
   padding: 15px 5px 15px 5px;
 }
 
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(148% + 1.3px);
+  height: 117px;
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}
+
 /**********************************
 SECTION PROJECTS
 ***********************************/
