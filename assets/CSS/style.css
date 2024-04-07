@@ -270,11 +270,11 @@ input[type="password"] {
   margin-top: 10px;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 #contactBtn:hover {
   background-color: #00f5d4;
-  transition: all 0.3s;
 }
 
 *:focus {
