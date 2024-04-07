@@ -27,6 +27,7 @@
     </nav>
 
     <main>
+      <!--  INTRO  -->
       <section id="intro">
         <div class="intro-title">
           <h1>CODE.<span class="intro-title-square">IT();</span>LAB</h1>
@@ -46,7 +47,9 @@
           </svg>
         </div>
       </section>
+      <!------------------------------------->
 
+      <!--  PROJECTS  -->
       <section id="projects">
         <div class="project-header">
           <h1 class="projects-header-title">RECENT PROJECTS</h1>
@@ -71,12 +74,14 @@
           </div>
         </div>
       </section>
+      <!------------------------------------->
 
+      <!--  ABOUT US  -->
       <section id="about-us">
         <div class="about-us-item">
           <div class="about-us-item-container">
-            <h3 class="about-us-title left">&lt;WHO&nbsp;ARE&nbsp;WE?/&gt;</h3>
-            <p class="about-us-text left">
+            <h3 class="about-us-title white">&lt;WHO&nbsp;ARE&nbsp;WE?/&gt;</h3>
+            <p class="about-us-text white">
               A small group of software development<br />
               enthusiasts passionate about technology.
             </p>
@@ -84,18 +89,78 @@
         </div>
         <div class="about-us-item">
           <div class="about-us-item-container">
-            <h3 class="about-us-title right">
+            <h3 class="about-us-title green">
               &lt;WHAT&nbsp;DO&nbsp;WE&nbsp;DO?/&gt;
             </h3>
-            <p class="about-us-text right">
+            <p class="about-us-text green">
               We strive to deliver cutting-edge solutions<br />
               that drive growth and efficiency.
             </p>
           </div>
         </div>
       </section>
+      <!------------------------------------->
 
-      <section id="contact"></section>
+      <!--  CONTACT  -->
+      <section id="contact">
+        <div class="contact-item">
+          <div class="contact-item-container">
+            <h3 class="contact-title green">&lt;WHO&nbsp;ARE&nbsp;WE?/&gt;</h3>
+            <p class="contact-text green">
+              A small group of software development<br />
+              enthusiasts passionate about technology.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h3>Contact Form</h3>
+          <br />
+          <form action="#">
+            <label for="fname">First Name:</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="firstName"
+              placeholder="Your first name..."
+              required
+            />
+            <br />
+            <br />
+            <label for="lname">Last Name:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lastName"
+              placeholder="Your last name..."
+              required
+            />
+            <br />
+            <br />
+            <label for="email">Email:</label><br />
+            <input
+              type="password"
+              id="email"
+              name="mail"
+              placeholder="code.it();lab@gmail.com"
+              required
+            />
+            <br />
+            <br />
+            <label for="message">Message:</label><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              placeholder="Write something..."
+              rows="10"
+            ></textarea>
+            <br />
+            <br />
+            <button id="contactBtn">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="/assets/js/script.js"></script>
   </body>
