@@ -228,7 +228,7 @@ CONTACT
 
 .contact-form-container {
   display: block;
-  margin: 10px 0px 0px 10px;
+  margin: 10px 0px 0px 30px;
 }
 
 .contact-form-container h3 {
@@ -274,4 +274,10 @@ input[type="password"] {
 
 #contactBtn:hover {
   background-color: hsl(172, 100%, 80%);
+  transition: all 0.3s;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px hsl(172, 100%, 80%);
 }
