@@ -273,11 +273,11 @@ input[type="password"] {
 }
 
 #contactBtn:hover {
-  background-color: hsl(172, 100%, 80%);
+  background-color: #00f5d4;
   transition: all 0.3s;
 }
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 8px hsl(172, 100%, 80%);
+  box-shadow: 0 0 0 8px #00f5d4;
 }
