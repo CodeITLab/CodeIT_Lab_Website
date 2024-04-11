@@ -182,7 +182,7 @@ p {
 }
 
 /**********************************
-CONTACT
+CONTACT US
 ***********************************/
 #contact {
   display: flex;
@@ -196,7 +196,8 @@ CONTACT
   );
 }
 
-.contact-item {
+.contact-item,
+.contact-form-container {
   height: 100%;
   width: 50%;
   display: flex;
@@ -226,20 +227,21 @@ CONTACT
   color: #009c86;
 }
 
-.contact-form-container {
-  display: block;
-  margin: 10px 0px 0px 30px;
-}
+/**********************************
+CONTACT FORM
+***********************************/
 
 .contact-form-container h3 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 30px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  color: #ffffff;
 }
 
 label {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
+  color: #ffffff;
 }
 
 input[type="text"],
@@ -251,7 +253,7 @@ textarea {
   margin-top: 10px;
 }
 
-input[type="password"] {
+input[type="email"] {
   width: 150%;
   padding: 10px;
   border: none;
@@ -266,7 +268,7 @@ input[type="password"] {
   padding: 6px;
   border: none;
   border-radius: 4px;
-  color: black;
+  color: #009c86;
   margin-top: 10px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -274,10 +276,15 @@ input[type="password"] {
 }
 
 #contactBtn:hover {
-  background-color: #00f5d4;
+  background-color: #404040;
+  color: #ffffff;
 }
 
 *:focus {
   outline: none;
   box-shadow: 0 0 0 8px #00f5d4;
 }
+
+/**********************************
+FOOTER
+***********************************/
