@@ -1,18 +1,95 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 body,
 html,
 main {
   background-color: #009c86;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+main:focus {
+  outline: none;
+}
+
+section,
+footer {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* GRID */
+
+.flex-grid {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.row-h-100 {
+  width: 50%;
+  height: 100%;
+}
+
+/* Styles */
+
+.bg-green {
+  background-color: #009c86;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-white {
+  color: #f8f8f8;
+}
+
+.text-green {
+  color: #009c86;
+}
+
+.d-flex-col-center {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Elements */
+
+.line {
+  border: 0px;
+  border-radius: 10px;
+  height: 5px;
+  margin-left: 6%;
 }
 
 /**********************************
-            NAV
+NAV
 ***********************************/
 nav {
   display: flex;
@@ -32,259 +109,178 @@ nav {
 }
 
 /**********************************
-SECTION INTRO
+SECTIONS GENERAL STYLING
 ***********************************/
 
 #intro,
-#about-us {
+#projects,
+#about,
+#contact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+/**********************************
+INTRO SECTION
+***********************************/
+
+#intro > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .intro-title {
-  font-size: 52px;
-  color: #fff;
+  font-size: 62px;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  color: #e2e2e2;
 }
 
 .intro-title-square {
-  height: 50px;
-  width: 50px;
-  background-color: #fff;
+  padding: 0 10px 0 10px;
+  background-color: #e2e2e2;
   color: #009c86;
-  padding: 15px 5px 15px 5px;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(148% + 1.3px);
-  height: 117px;
-}
-
-.wave .shape-fill {
-  fill: #ffffff;
 }
 
 /**********************************
-SECTION PROJECTS
+ABOUT SECTION
 ***********************************/
 
-/**********************************
-ABOUT US
-***********************************/
-#about-us {
-  background: linear-gradient(
-    to right,
-    #009c86 0%,
-    #009c86 50%,
-    #fff 50%,
-    #fff 100%
-  );
+#about {
+  margin-top: 15px;
 }
 
-.about-us-item {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-us-title {
+.about-title {
+  font-size: 36px;
+  margin-bottom: 0px;
   font-family: "Bebas Neue", sans-serif;
+}
 
-  font-weight: bold;
-  font-size: 48px;
-  letter-spacing: 3px;
+.about-subtitle {
+  font-size: 22px;
   text-align: center;
-}
-
-.about-us-text {
   font-family: "Roboto Condensed", sans-serif;
-  color: #009c86;
-  font-size: 24px;
-}
-
-.white {
-  color: #fff;
-}
-
-.green {
-  color: #009c86;
 }
 
 /**********************************
-PROJECTS
+PROJECTS SECTION
 ***********************************/
 
 #projects {
-  height: 100%;
-  background-color: #fff;
+  flex-direction: row;
+  background-color: #f8f8f8;
+  margin: 0 10px 0 10px;
 }
 
-.project-header {
-  padding: 24px;
+#projects div:nth-child(1) {
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.projects-header-title {
-  font-family: "Bebas Neue", sans-serif;
-  color: #009c86;
-  font-weight: bold;
-  font-size: 48px;
-  letter-spacing: 3px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-p {
-  font-family: "Roboto Condensed", sans-serif;
-  color: #009c86;
-  font-size: 24px;
-  text-align: center;
-  padding: 24px;
-}
-
-.project-items {
-  display: flex;
+#projects div:nth-child(2) {
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
 }
 
-.row {
-  width: 460px;
-  height: 200px;
+.projects-title,
+.projects-subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  padding-left: 8%;
+  color: #009c86;
+}
+
+.projects-title {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+
+.projects-subtitle {
+  margin: 7px 0 0 0;
+  font-size: 32px;
+}
+
+.item {
   background-color: #009c86;
+  color: #f8f8f8;
+  margin: 2% 2% 2% 0;
+  height: 600px;
+  text-align: center;
 }
 
-.items,
-.row p {
-  color: #fff;
+.item p {
+  font-size: 22px;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding-bottom: 5px;
 }
 
 /**********************************
-CONTACT US
+CONTACT SECTION
 ***********************************/
-#contact {
-  display: flex;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    #fff 0%,
-    #fff 50%,
-    #009c86 50%,
-    #009c86 100%
-  );
+
+.contact-title {
+  font-size: 36px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.contact-item,
-.contact-form-container {
-  height: 100%;
-  width: 50%;
+.contact-subtitle {
+  font-size: 22px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+form label {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  border: 0px;
+  width: 250px !important;
+}
+
+form input {
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+form textarea {
+  height: 50px;
+}
+
+form button {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  border: 0px;
+  color: #009c86;
+  background-color: #e2e2e2;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contact-title {
-  font-family: "Bebas Neue", sans-serif;
-
-  font-weight: bold;
-  font-size: 48px;
-  letter-spacing: 3px;
-  text-align: center;
-}
-
-.contact-text {
   font-family: "Roboto Condensed", sans-serif;
-  color: #009c86;
-  font-size: 24px;
-}
-.white {
-  color: #fff;
+  height: 50px;
+  color: #e2e2e2;
 }
 
-.green {
-  color: #009c86;
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  #projects {
+    flex-direction: column;
+  }
 }
 
-/**********************************
-CONTACT FORM
-***********************************/
-
-.contact-form-container h3 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: #ffffff;
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }
-
-label {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-input[type="text"],
-textarea {
-  width: 150%;
-  padding: 10px;
-  border: none;
-  border-radius: 9px;
-  margin-top: 10px;
-}
-
-input[type="email"] {
-  width: 150%;
-  padding: 10px;
-  border: none;
-  border-radius: 9px;
-  margin-top: 10px;
-}
-
-#contactBtn {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  width: 30%;
-  padding: 6px;
-  border: none;
-  border-radius: 4px;
-  color: #009c86;
-  margin-top: 10px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-#contactBtn:hover {
-  background-color: #404040;
-  color: #ffffff;
-}
-
-*:focus {
-  outline: none;
-  box-shadow: 0 0 0 8px #00f5d4;
-}
-
-/**********************************
-FOOTER
-***********************************/
